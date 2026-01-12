@@ -3,7 +3,7 @@
 A simple **frontend e‑commerce website** built with HTML, CSS, and JavaScript.  
 Users can browse products, add them to a cart, and simulate a checkout process — all without a backend.
 
----
+----
 
 ## 🚀 Features
 - **Product Catalog** – Display a list of products with images, descriptions, and prices  
