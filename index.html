@@ -30,6 +30,513 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>vxstudio.store</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+   <!-- Leaflet CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<link rel="icon" href="img/VXLogo.png">
+
+</head>
+<body>
+  <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm">
+  <div class="container-fluid">
+  
+    <a class="navbar-brand brand-title" href="#home">VXSTUDIO</a>
+
+    <!-- Burger -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar content -->
+    <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+     
+      <ul class="navbar-nav text-uppercase">
+        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#products">Product</a></li>
+        <li class="nav-item"><a class="nav-link" href="#faqs">FAQs</a></li>
+      </ul>
+
+      
+      <div class="d-flex align-items-center">
+        
+        <form class="d-flex me-3 position-relative" role="search">
+          <input class="form-control pe-5" type="search" placeholder="Search products..." aria-label="Search">
+          <i class="bi bi-search position-absolute top-50 end-0 translate-middle-y me-3"></i>
+        </form>
+
+       
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link position-relative dropdown-toggle" href="#" id="cartDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-cart3" style="font-size: 1.3rem;"></i>
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                2
+              </span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end p-3 shadow-sm" aria-labelledby="cartDropdown" style="min-width: 250px;">
+              <li class="mb-2">
+                <div class="d-flex justify-content-between align-items-center">
+                  <span>VX T-Shirt</span>
+                  <span class="fw-bold">₱899</span>
+                </div>
+              </li>
+              <li class="mb-2">
+                <div class="d-flex justify-content-between align-items-center">
+                  <span>Black Coffee</span>
+                  <span class="fw-bold">₱70</span>
+                </div>
+              </li>
+              <li><hr class="dropdown-divider"></li>
+              <li>
+                <a href="#cart" class="btn btn-dark w-100">Go to Cart</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+  <!--- Banner -->
+   <div id="home">
+    <div  id="carouselExampleAutoplay" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/WEARS.jpg" class="d-block w-100" alt="Wear Banner" />
+        </div>
+        <div class="carousel-item">
+          <img src="img/VXWEAR.jpg" class="d-block w-100" alt="VX Wear Banner" />
+        </div>
+        <div class="carousel-item">
+          <img src="img/brew.png" class="d-block w-100" alt="Brew Banner" />
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplay" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplay" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+      </div>
+      </div>
+
+     <!--  <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleAutoplay" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#carouselExampleAutoplay" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carouselExampleAutoplay" data-bs-slide-to="2"></button>
+      </div>
+    </div>
+
+<!-- grid -->
+<section class="grid">
+  <div class="row">
+    <!-- Image 1 -->
+    <div class="col-xs-12 col-sm-4">
+      <div class="vx-grid-item">
+        <div class="vx-media image-container">
+          <img src="img/modelcap.png" alt="VX Cap" class="img-responsive">
+          <div class="overlay">
+            <a class="nav-link" href="#products">View Product</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Image 2 -->
+    <div class="col-xs-12 col-sm-4">
+      <div class="vx-grid-item">
+        <div class="vx-media image-container">
+          <img src="img/modelf.png" alt="VX Jersey" class="img-responsive">
+          <div class="overlay">
+            <a class="nav-link" href="#products">View Product</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Image 3 -->
+    <div class="col-xs-12 col-sm-4">
+      <div class="vx-grid-item">
+        <div class="vx-media image-container">
+          <img src="img/modelbrew.png" alt="VX Brew" class="img-responsive">
+          <div class="overlay">
+            <a class="nav-link" href="#products">View Product</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Product Tabs -->
+<section id="products" class="py-5 bg-light fade-in">
+  <div class="container">
+    <ul class="nav nav-tabs justify-content-center mb-4" id="productTabs" role="tablist">
+      <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#wear">Wears</button></li>
+      <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#brew">Brews</button></li>
+      <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#bundle">Bundle Promos</button></li>
+    </ul>
+
+    <div class="tab-content">
+      <!-- Wear -->
+      <div class="tab-pane fade show active" id="wear">
+        <h2 class="text-center mb-4">Wear</h2>
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-12 col-md-6 col-lg-3 fade-in">
+            <div class="card h-100 shadow-sm">
+              <img src="img/PROD1.jpg" class="card-img-top" alt="T-Shirt">
+              <div class="card-body text-center">
+                <h5 class="card-title">VX T-Shirt</h5>
+                <p class="card-text text-muted">Minimalist premium cotton tee.</p>
+                <p class="fw-bold">₱899.00</p>
+                <a href="#" class="btn btn-dark text-white">Add to Cart</a>
+                <a href="#" class="btn btn-outline-dark">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="col-12 col-md-6 col-lg-3 fade-in">
+            <div class="card h-100 shadow-sm">
+              <img src="img/PROD2.jpg" class="card-img-top" alt="Cap">
+              <div class="card-body text-center">
+                <h5 class="card-title">VX Jersey</h5>
+                <p class="card-text text-muted">NBA cut jersey with logo.</p>
+                <p class="fw-bold">₱1,000.00</p>
+                <a href="#" class="btn btn-dark text-white">Add to Cart</a>
+                <a href="#" class="btn btn-outline-dark">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="col-12 col-md-6 col-lg-3 fade-in">
+            <div class="card h-100 shadow-sm">
+              <img src="img/PROD3.jpg" class="card-img-top" alt="Hoodie">
+              <div class="card-body text-center">
+                <h5 class="card-title">Esports Jersey</h5>
+                <p class="card-text text-muted">Comfortable pro esports jersey.</p>
+                <p class="fw-bold">₱1,199.00</p>
+                <a href="#" class="btn btn-dark text-white">Add to Cart</a>
+                <a href="#" class="btn btn-outline-dark">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="col-12 col-md-6 col-lg-3 fade-in">
+            <div class="card h-100 shadow-sm">
+              <img src="img/PROD4.jpg" class="card-img-top" alt="Jacket">
+              <div class="card-body text-center">
+                <h5 class="card-title">VX Cap</h5>
+                <p class="card-text text-muted">Classic adjustable cap with logo.</p>
+                <p class="fw-bold">₱499.00</p>
+                <a href="#" class="btn btn-dark text-white">Add to Cart</a>
+                <a href="#" class="btn btn-outline-dark">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Brew -->
+      <div class="tab-pane fade" id="brew">
+        <h2 class="text-center mb-4">Brew </h2>
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-12 col-md-6 col-lg-3 fade-in">
+            <div class="card h-100 shadow-sm">
+              <img src="img/brew1.jpg" class="card-img-top" alt="Coffee">
+              <div class="card-body text-center">
+                <h5 class="card-title">Black Coffee</h5>
+                <p class="card-text text-muted">Single-origin, slow-roasted beans.</p>
+                <p class="fw-bold">₱70.00</p>
+                <a href="#" class="btn btn-dark text-white">Add to Cart</a>
+                <a href="#" class="btn btn-outline-dark">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="col-12 col-md-6 col-lg-3 fade-in">
+            <div class="card h-100 shadow-sm">
+              <img src="img/brew2.jpg" class="card-img-top" alt="Espresso">
+              <div class="card-body text-center">
+                <h5 class="card-title">Pack Black Coffee</h5>
+                <p class="card-text text-muted">Pack slow-roasted beans.</p>
+                <p class="fw-bold">₱400.00</p>
+                <a href="#" class="btn btn-dark text-white">Add to Cart</a>
+                <a href="#" class="btn btn-outline-dark">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="col-12 col-md-6 col-lg-3 fade-in">
+            <div class="card h-100 shadow-sm">
+              <img src="img/brew3.jpg" class="card-img-top" alt="Cold Brew">
+              <div class="card-body text-center">
+                <h5 class="card-title">Vanilla Coffee</h5>
+                <p class="card-text text-muted">Refreshing cold brew blend.</p>
+                <p class="fw-bold">₱70.00</p>
+                <a href="#" class="btn btn-dark text-white">Add to Cart</a>
+                <a href="#" class="btn btn-outline-dark">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="col-12 col-md-6 col-lg-3 fade-in">
+            <div class="card h-100 shadow-sm">
+              <img src="img/brew4.jpg" class="card-img-top" alt="French Press">
+              <div class="card-body text-center">
+                <h5 class="card-title">Pack Vanilla Coffee</h5>
+                <p class="card-text text-muted">Pack smooth vanilla coffee.</p>
+                <p class="fw-bold">₱400.00</p>
+                <a href="#" class="btn btn-dark text-white">Add to Cart</a>
+                <a href="#" class="btn btn-outline-dark">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bundle -->
+      <div class="tab-pane fade" id="bundle">
+        <h2 class="text-center mb-4">Bundle Promo</h2>
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-12 col-md-6 col-lg-4 fade-in">
+            <div class="card h-100 shadow-sm">
+              <img src="img/bundle1.jpg" class="card-img-top" alt="Bundle">
+              <div class="card-body text-center">
+                <h5 class="card-title">Wear + Brew Bundle</h5>
+                <p class="card-text text-muted">T-shirt + Coffee combo pack.</p>
+                <p class="fw-bold">₱950.00</p>
+                <a href="#" class="btn btn-dark text-white">Add to Cart</a>
+                <a href="#" class="btn btn-outline-dark">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="col-12 col-md-6 col-lg-4 fade-in">
+            <div class="card h-100 shadow-sm">
+              <img src="img/bundle2.jpg" class="card-img-top" alt="Bundle">
+              <div class="card-body text-center">
+                <h5 class="card-title">Cap + Coffee Bundle</h5>
+                <p class="card-text text-muted">Cap + black coffee pack.</p>
+                <p class="fw-bold">₱540.00</p>
+                <a href="#" class="btn btn-dark text-white">Add to Cart</a>
+                <a href="#" class="btn btn-outline-dark">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="map" class="py-5 fade-in">
+  <div class="container">
+    <h2 class="text-center mb-4">Find Us</h2>
+    <div id="leafletMap" class="rounded" style="height: 400px;"></div>
+    <div class="text-center mt-3">
+      <a href="https://www.google.com/maps/place/Pandaraonan,+Nueva+Valencia,+Guimaras,+Philippines"
+         target="_blank" class="btn btn-primary me-2">
+        Open in Google Maps
+      </a>
+      <button id="resetLocation" class="btn btn-outline-dark">
+        Back to Location
+      </button>
+    </div>
+  </div>
+</section>
+
+  <!-- FAQs -->
+ <section id="faqs" class="py-5 fade-in">
+  <div class="container">
+    <h2 class="text-center mb-4">FAQs</h2>
+    <div class="accordion" id="faqAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqHeadingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseOne" aria-expanded="true" aria-controls="faqCollapseOne">
+            What is VX Studio?
+          </button>
+        </h2>
+        <div id="faqCollapseOne" class="accordion-collapse collapse show" aria-labelledby="faqHeadingOne" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            VX Studio is a lifestyle brand that blends fashion and coffee culture into one unified experience.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqHeadingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
+            How can I order products?
+          </button>
+        </h2>
+        <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            You can order directly through our website by adding items to your cart and checking out securely.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqHeadingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree">
+            Do you ship internationally?
+          </button>
+        </h2>
+        <div id="faqCollapseThree" class="accordion-collapse collapse" aria-labelledby="faqHeadingThree" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Yes, we ship worldwide. Shipping costs and delivery times vary depending on your location.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqHeadingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseFour" aria-expanded="false" aria-controls="faqCollapseFour">
+            What payment methods do you accept?
+          </button>
+        </h2>
+        <div id="faqCollapseFour" class="accordion-collapse collapse" aria-labelledby="faqHeadingFour" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            We accept major credit cards, PayPal, and other secure payment options available at checkout.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqHeadingFive">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseFive" aria-expanded="false" aria-controls="faqCollapseFive">
+            Can I return or exchange items?
+          </button>
+        </h2>
+        <div id="faqCollapseFive" class="accordion-collapse collapse" aria-labelledby="faqHeadingFive" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Absolutely. We offer a hassle-free return and exchange policy within 30 days of purchase.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+  </section>
+<footer class="bg-white text-dark border-top pt-5 pb-3 fade-in">
+  <div class="container text-center">
+    <div class="row justify-content-center">
+      
+      <div class="col-12 col-md-4 mb-4 text-start">
+        <h5 class="fw-bold">VX Studio</h5>
+        <p class="small">
+          A lifestyle brand uniting fashion and coffee culture. Wear it. Brew it. Live it.
+        </p>
+      </div>
+
+      <!-- Contact -->
+        <div class="col-12 col-md-4 mb-4 text-start">
+        <h5 class="fw-bold">Contact Us</h5>
+        <ul class="list-unstyled small">
+          <li><i class="bi bi-geo-alt-fill me-2"></i> Nueva Valencia, Guimaras, Philippines</li>
+          <li><i class="bi bi-telephone-fill me-2"></i> +63 912 345 6789</li>
+          <li><i class="bi bi-envelope-fill me-2"></i> support@vxstudio.store</li>
+        </ul>
+      </div>
+
+      <!-- Social -->
+      <div class="col-12 col-md-4 mb-4 text-start">
+        <h5 class="fw-bold">Follow Us</h5>
+        <div>
+          <a href="https://www.facebook.com/share/1GBEjRw9G3/?mibextid=wwXIfr" class="text-dark me-3"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/erolvx_?igsh=ZnE5bWI3cncxdmJt&utm_source=qr" class="text-dark me-3"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-dark me-3"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="text-dark"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <hr class="border-secondary">
+
+    <!-- Copyright -->
+    <div class="text-center small">
+      <p class="mb-0">&copy; 2026 VX Studio. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Animate every time element enters/leaves viewport
+    const faders = document.querySelectorAll('.fade-in');
+    const appearOptions = { threshold: 0.2 };
+
+    const appearOnScroll = new IntersectionObserver(function(entries) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('appear');
+        } else {
+          entry.target.classList.remove('appear');
+        }
+      });
+    }, appearOptions);
+
+    faders.forEach(fader => { appearOnScroll.observe(fader); });
+  </script>
+ 
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    
+    var myLocation = [10.4984, 122.4983];
+
+    
+                          var map = L.map('leafletMap', {
+      zoomControl: true
+    }).setView(myLocation, 15);
+
+   
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+   
+    var marker = L.marker(myLocation).addTo(map)
+      .bindPopup('<b>VX Studio.store </b><br> Pandaraonan, Nueva Valencia, Guimaras')
+      .openPopup();
+
+            
+    var resetBtn = document.getElementById('resetLocation');
+    if (resetBtn) {
+      resetBtn.addEventListener('click', function () {
+        map.setView(myLocation, 15);
+        marker.openPopup();
+      });
+    }
+
+    setTimeout(function () {
+      map.invalidateSize();
+    }, 200);
+  });
+</script>
+
+</body>
+</html>
+
+
   
     <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
      
