@@ -221,6 +221,7 @@ h3,
   text-align: left;
 }
 
+/* adjas adjas ah */
 @media (max-width: 575px) {
   .col-12 {
     flex: 0 0 100%;
