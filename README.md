@@ -1,23 +1,27 @@
 # 🛒 Online Shop
 
-A simple **frontend e‑commerce website** built with HTML, CSS, and JavaScript.  
+A simple **frontend e‑commerce website** built with HTML and CSS.  
 Users can browse products, add them to a cart, and simulate a checkout process — all without a backend.
 
-----
+---
 
 ## 🚀 Features
-- **Product Catalog** – Display a list of products with images, descriptions, and prices  
-- **Shopping Cart** – Add/remove items from the cart, view total price  
-- **User Authentication (Demo)** – Basic login/signup simulation (frontend only)  
-- **Responsive Design** – Works on desktop and mobile devices  
-- **Search Functionality** – Filter products by name or category  
+- **Navigation Bar** – Easy access to all sections of the site  
+- **Search Bar** – Quickly find products by name or category  
+- **Add to Cart** – Add/remove items with dynamic cart updates  
+- **Carousel** – Showcase featured products or promotions with sliding banners  
+- **Image Modal** – View product images in a larger, focused popup  
+- **Grid Product Catalogue** – Organized product display with responsive layout  
+- **Tabs** – Switch between product details, reviews, and related items  
+- **FAQs Section** – Common questions answered for users  
+- **Contact Page** – Simple form for inquiries and feedback  
 
 ---
 
 ## 🛠️ Technologies Used
-- **Frontend**: HTML5, CSS3, JavaScript (Vanilla JS)  
+- **Frontend**: HTML5, CSS3  
 - **Styling**: Custom CSS with responsive design  
-- **Data Storage**: Local Storage for cart persistence (no backend)  
+- **Data Handling**: Purely frontend (no backend, no JavaScript logic)  
 
 ---
 
@@ -48,10 +52,14 @@ online-shop/
 ---
 
 ## 📸 Usage
-- Browse products on the homepage  
-- Click **Add to Cart** to add items  
-- View your cart by clicking the cart icon  
-- Proceed to checkout (simulated frontend flow)  
+- Navigate through the site using the **navbar**  
+- Use the **search bar** to filter products  
+- Browse the **carousel** for featured items  
+- Click products to view them in an **image modal**  
+- Explore the **grid catalogue** for all products  
+- Switch between **tabs** for product details and reviews  
+- Check the **FAQs** section for quick help  
+- Reach out via the **contact page**  
 
 ---
 
